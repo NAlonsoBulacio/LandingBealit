@@ -73,7 +73,7 @@ const Registro2 = ({ actualizarEstado }) => {
   };
 
   return (
-    <div className="App p-4 space-y-4 w-full">
+    <div className="App p-0 lg:p-4 space-y-4 w-full">
       <div className="flex flex-wrap justify-center">
         <h1 className="text-md lg:text-lg font-semibold text-center uppercase text-gray-200">Rellena el formulario con tu nombre y email</h1>
       </div>
