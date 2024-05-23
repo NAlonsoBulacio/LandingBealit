@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import Registro2 from "../../components/Registro/Registro";
 import logo from "../../assets/logo-trans.png";
+import { MdOutlineAdsClick } from "react-icons/md";
 const LandingVideo = () => {
   const [isLoading, setIsLoading] = useState(true);
   const history = useHistory();
@@ -13,7 +14,7 @@ const LandingVideo = () => {
   return (
     <div className="bg-[#07A3BA] h-full">
       
-      <div className=" flex flex-wrap justify-center items-start py-4 lg:py-4">
+      <div className=" flex flex-wrap justify-center items-start ">
         <div className="w-full flex justify-center">
           <img className="w-[220px]" src={logo} alt="" />
         </div>
@@ -29,7 +30,7 @@ const LandingVideo = () => {
             En una masterclass Exclusiva de X Minutos
           </p>
         </div>
-        <div className="px-3 lg:px-32 xl:px-[300px]">
+        <div className="px-3 lg:px-44 xl:px-[380px]">
           {isLoading && (
             <div className="flex justify-center items-center mb-4">
               <p className="text-gray-200 text-lg">Cargando video...</p>
@@ -50,8 +51,8 @@ const LandingVideo = () => {
           </video>
         </div>
         <div>
-          <button className="w-[100%] bg-gray-700 hover:bg-gray-500 duration-300 text-white p-3 cursor-pointer rounded-xl text-xl">
-            Reservar mi plaza
+          <button className="flex justify-center items-center w-[100%] font-poppins font-semibold bg-gray-200 hover:bg-gray-500 duration-300 text-[#07A3BA] px-6 py-3 cursor-pointer rounded-xl text-xl">
+            <MdOutlineAdsClick className="mr-2" /> Ir a Comprar el Kit!
           </button>
         </div>
       </div>
