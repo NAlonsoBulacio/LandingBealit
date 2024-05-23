@@ -36,7 +36,7 @@ const LandingVideo = () => {
             (Revitalizar tu Piel en menos de 90 días) sin cirugía. Garantizado
           </h1>
           <p className="text-lg lg:text-xl italic text-gray-200">
-            En una masterclass Exclusiva de X Minutos
+            En una masterclass Exclusiva de 10 Minutos
           </p>
         </div>
         <div className="px-3 lg:px-44 xl:px-[380px]">
