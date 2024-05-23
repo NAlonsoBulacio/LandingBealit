@@ -12,7 +12,7 @@ const LandingVideo = () => {
     }
   };
   return (
-    <div className="bg-[#07A3BA] h-full">
+    <div className="bg-[#07A3BA] h-full pb-14">
       
       <div className=" flex flex-wrap justify-center items-start ">
         <div className="w-full flex justify-center">
@@ -46,7 +46,7 @@ const LandingVideo = () => {
           </video>
         </div>
         <div>
-          <button className="flex justify-center items-center w-[100%] font-poppins font-semibold bg-gray-200 hover:bg-gray-500 duration-300 text-[#07A3BA] px-6 py-3 cursor-pointer rounded-xl text-xl">
+          <button className="flex justify-center items-center w-[100%] font-noto-700 font-semibold bg-gray-200 hover:bg-gray-500 duration-300 text-[#07A3BA] px-6 py-3 cursor-pointer rounded-xl text-xl">
             <MdOutlineAdsClick className="mr-2" /> Ir a Comprar el Kit!
           </button>
         </div>
