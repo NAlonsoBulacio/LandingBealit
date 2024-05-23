@@ -31,7 +31,7 @@ const Landing = () => {
         </div>
         <div className="flex flex-wrap  justify-center px-3 lg:px-10 xl:px-32 py-4">
           <div className="w-full lg:w-[50%] flex justify-center px-0 lg:px-3 ">
-            <video className="w-full h-auto mb-4 rounded-xl" loop muted autoPlay>
+            <video className="w-full h-auto mb-4 rounded-xl" loop muted autoPlay playsInline>
               <source
                 src="https://res.cloudinary.com/de2r6mtda/video/upload/v1716496259/Bealit/Dise%C3%B1o_sin_t%C3%ADtulo_1_ijbhrb.mp4"
                 type="video/mp4"
