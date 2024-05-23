@@ -109,8 +109,8 @@ const Registro2 = ({ actualizarEstado }) => {
               )}
           <input
             type="submit"
-            className="w-[100%] bg-gray-700 hover:bg-gray-500 duration-300 text-white p-3 cursor-pointer rounded-xl text-xl"
-            value="Reservar mi plaza"
+            className="flex justify-center items-center w-[100%] font-poppins font-semibold bg-gray-200 hover:bg-gray-500 duration-300 text-[#07A3BA] px-6 py-3 cursor-pointer rounded-xl text-xl"
+            value="Reservar mi plaza!"
           />
         </form>
       </div>
