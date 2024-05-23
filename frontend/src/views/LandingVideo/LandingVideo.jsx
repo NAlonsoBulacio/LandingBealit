@@ -55,6 +55,7 @@ const LandingVideo = () => {
               onLoadedData={() => setIsLoading(false)} // Cuando el video está listo
               onWaiting={() => setIsLoading(true)} // Cuando el video está esperando más datos
               autoPlay={isPlaying} // Inicia la reproducción automáticamente si isPlaying es true
+              playsInline
             >
               <source
                 src="https://res.cloudinary.com/de2r6mtda/video/upload/v1716494722/Bealit/Y2meta.app-MASTERCLASS-_1080p_2_elzkdu.mp4"
