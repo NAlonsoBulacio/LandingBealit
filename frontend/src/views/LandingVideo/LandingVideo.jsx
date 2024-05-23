@@ -31,12 +31,7 @@ const LandingVideo = () => {
           </p>
         </div>
         <div className="px-3 lg:px-44 xl:px-[380px]">
-          {/* {isLoading && (
-            <div className="flex justify-center items-center mb-4">
-              <p className="text-gray-200 text-lg">Cargando video...</p>
-              {/* Aquí puedes agregar un spinner si lo deseas */}
-            </div>
-          {/* )} */} 
+
           <video
             className="w-full h-auto mb-4 rounded-xl"
             controls
