@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { useHistory } from "react-router-dom";
 import Registro2 from "../../components/Registro/Registro";
 import logo from "../../assets/logo-trans.png";
@@ -8,11 +8,26 @@ const LandingVideo = () => {
   const [showImage, setShowImage] = useState(true);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [showButton, setShowButton] = useState(false);
+  const [showTopRightButton, setShowTopRightButton] = useState(false);
   const history = useHistory();
+  const videoRef = useRef(null);
 
   const handleClick = () => {
-    setShowImage(false); // Oculta la imagen cuando se hace clic en ella
-    setIsPlaying(true); // Inicia la reproducción del video
+    setShowImage(false);
+    setIsPlaying(true);
+  };
+
+  const handleTimeUpdate = () => {
+    if (videoRef.current) {
+      const currentTime = videoRef.current.currentTime;
+      if (currentTime >= 585) { // 9 minutes 45 seconds
+        setShowButton(true);
+      }
+      if (currentTime >= 600) { // 10 minutes
+        setShowTopRightButton(true);
+      }
+    }
   };
 
   const actualizarEstadoPadre = (estado) => {
@@ -39,8 +54,8 @@ const LandingVideo = () => {
             En una masterclass Exclusiva de 10 Minutos
           </p>
         </div>
-        <div className="px-3 lg:px-44 xl:px-[380px]">
-          {showImage && ( // Mostrar la imagen si showImage es true
+        <div className="px-3 lg:px-44 xl:px-[380px] relative">
+          {showImage && (
             <img
               className="w-full h-auto mb-4 rounded-xl cursor-pointer"
               src="https://res.cloudinary.com/de2r6mtda/image/upload/v1716499323/Bealit/Dise%C3%B1o_sin_t%C3%ADtulo_37_jhctgk.png"
@@ -48,28 +63,41 @@ const LandingVideo = () => {
               onClick={handleClick}
             />
           )}
-          {(!showImage || isPlaying) && ( // Mostrar el video si showImage es false o si isPlaying es true
-            <video
-              className="w-full h-auto mb-4 rounded-xl"
-              controls
-              onLoadedData={() => setIsLoading(false)} // Cuando el video está listo
-              onWaiting={() => setIsLoading(true)} // Cuando el video está esperando más datos
-              autoPlay={isPlaying} // Inicia la reproducción automáticamente si isPlaying es true
-              playsInline
-            >
-              <source
-                src="https://res.cloudinary.com/de2r6mtda/video/upload/v1716494722/Bealit/Y2meta.app-MASTERCLASS-_1080p_2_elzkdu.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-            </video>
+          {(!showImage || isPlaying) && (
+            <div className="relative">
+              <video
+                ref={videoRef}
+                className="w-full h-auto mb-4 rounded-xl"
+                controls
+                onLoadedData={() => setIsLoading(false)}
+                onWaiting={() => setIsLoading(true)}
+                autoPlay={isPlaying}
+                playsInline
+                onTimeUpdate={handleTimeUpdate}
+              >
+                <source
+                  src="https://res.cloudinary.com/de2r6mtda/video/upload/v1716494722/Bealit/Y2meta.app-MASTERCLASS-_1080p_2_elzkdu.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+              {showTopRightButton && (
+                <button
+                  className="absolute top-2 right-2 bg-gray-200 hover:bg-gray-500 duration-300 text-[#07A3BA] px-4 py-2 cursor-pointer rounded-full text-sm"
+                >
+                 Click aqui para conseguir tu oferta!
+                </button>
+              )}
+            </div>
           )}
         </div>
-        <div>
-          <button className="flex justify-center items-center w-[100%] font-noto-700 font-semibold bg-gray-200 hover:bg-gray-500 duration-300 text-[#07A3BA] px-6 py-3 cursor-pointer rounded-xl text-xl">
-            <MdOutlineAdsClick className="mr-2" /> Ir a Comprar el Kit!
-          </button>
-        </div>
+        {showButton && (
+          <div className="px-3">
+            <button className="flex justify-center items-center w-[100%] font-noto-700 font-semibold bg-gray-200 hover:bg-gray-500 duration-300 text-[#07A3BA] px-2 lg: px-6 py-3 cursor-pointer rounded-xl text-lg lg:text-xl">
+              <MdOutlineAdsClick className="mr-2 text-3xl" /> Click para acceder y<br /> comprar hoy mismo
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

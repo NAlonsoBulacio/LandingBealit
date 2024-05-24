@@ -3,10 +3,38 @@
     /* src: url('./static/fonts/PODIUMSoft-UltraLight.ttf') format('truetype'); */
     src: url('./static/fonts/WarsawGothic.otf') format('opentype');
 }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200;300;400;500;600;700;800;900&display=swap');
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+.font-montserrat-300{
+   font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+}
+.font-montserrat-400{
+   font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+.font-montserrat-italic-400{
+   font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style:italic;
+}
+
+.font-montserrat-500{
+   font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+.font-montserrat-600{
+   font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+.font-montserrat-700{
+   font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
 
 .font-noto-300{
     font-family: 'Noto Sans Display', sans-serif;
@@ -34,3 +62,4 @@
     font-family: 'Noto Sans Display', sans-serif;
     font-weight: 700;
 }
+
