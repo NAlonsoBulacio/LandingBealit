@@ -48,7 +48,7 @@ const LandingVideo = () => {
           </p>
           <h1 className="text-balance font-podium text-4xl lg:text-6xl uppercase text-gray-100">
             Descubre el Método Científicamente Probado de 5 Minutos para
-            (Revitalizar tu Piel en menos de 90 días) sin cirugía. Garantizado
+            <span className="text-gray-700"> Revitalizar tu Piel en menos de 90 días</span> sin cirugía. Garantizado
           </h1>
           <p className="text-lg lg:text-xl italic text-gray-200">
             En una masterclass Exclusiva de 10 Minutos

@@ -6,8 +6,8 @@ const Registro2 = ({ actualizarEstado }) => {
     Email: ''
   });
   const [errors, setErrors] = useState({
-    Name: "completar con su nombre",
-    Email: "completar email",
+    Name: "Completar con su nombre",
+    Email: "Donde te enviamos la Masterclass?",
   });
   const [formSubmitted, setFormSubmitted] = useState(false);
 
@@ -17,7 +17,7 @@ const Registro2 = ({ actualizarEstado }) => {
       errors.Name = "Llenar con su nombre";
     }
     if (!formData.Email) {
-      errors.Email = "Debes ingresar un Email.";
+      errors.Email = "Donde te enviamos la Masterclass?";
     }
     if (formData.Email) {
       const EmailRegex =
