@@ -37,7 +37,7 @@ const LandingVideo = () => {
   };
 
   return (
-    <div className="bg-[#07A3BA] h-full pb-14">
+    <div className="bg-[#07A3BA] h-screen lg:h-full pb-14">
       <div className="flex flex-wrap justify-center items-start">
         <div className="w-full flex justify-center">
           <img className="w-[220px]" src={logo} alt="" />
