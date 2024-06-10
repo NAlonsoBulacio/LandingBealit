@@ -12,7 +12,7 @@ const Landing = () => {
   };
 
   return (
-    <div className="bg-[#07A3BA] w-full lg:w-auto ">
+    <div className="bg-[#018FE1] w-full lg:w-auto ">
       <div className="flex flex-wrap justify-center items-start py-4 ">
         <div className="w-full flex justify-center">
           <img className="w-64" src={logo} alt="" />

@@ -92,6 +92,7 @@ const Registro2 = ({ actualizarEstado }) => {
             type="text"
             value={formData.Name}
             onChange={handleChange}
+             autoComplete="name"
           />
            {formSubmitted && errors.Name && (
                 <span className="text-red-500">{errors.Name}</span>
@@ -103,13 +104,14 @@ const Registro2 = ({ actualizarEstado }) => {
             type="text"
             value={formData.Email}
             onChange={handleChange}
+             autoComplete="email"
           />
            {formSubmitted && errors.Email && (
                 <span className="text-red-500">{errors.Email}</span>
               )}
           <input
             type="submit"
-            className="flex justify-center items-center w-[100%] font-noto-700 font-semibold bg-gray-200 hover:bg-gray-500 duration-300 text-[#07A3BA] px-6 py-3 cursor-pointer rounded-xl text-xl"
+            className="flex justify-center items-center w-[100%] font-noto-700 font-semibold bg-gray-200 hover:bg-gray-500 duration-300 text-[#018FE1] px-6 py-3 cursor-pointer rounded-xl text-xl"
             value="Reservar mi plaza!"
           />
         </form>
