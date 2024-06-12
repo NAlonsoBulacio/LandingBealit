@@ -37,7 +37,7 @@ const LandingVideo = () => {
   };
 
   return (
-    <div className="bg-[#018FE1] h-screen lg:h-full pb-14">
+    <div className="bg-[#5fc6d6] h-screen lg:h-full pb-14">
       <div className="flex flex-wrap justify-center items-start">
         <div className="w-full flex justify-center">
           <img className="w-[220px]" src={logo} alt="" />
@@ -83,7 +83,7 @@ const LandingVideo = () => {
               </video>
               {showTopRightButton && (
                 <button
-                  className="absolute top-2 right-2 bg-gray-200 hover:bg-gray-500 duration-300 text-[#018FE1] px-4 py-2 cursor-pointer rounded-full text-sm"
+                  className="absolute top-2 right-2 bg-gray-200 hover:bg-gray-500 duration-300 text-[#5fc6d6] px-4 py-2 cursor-pointer rounded-full text-sm"
                 >
                  Click aqui para conseguir tu oferta!
                 </button>
@@ -93,7 +93,7 @@ const LandingVideo = () => {
         </div>
         {/* {showButton && ( */}
           <div className="w-full lg:w-auto mx-3">
-            <button className="flex justify-center items-center w-[100%] font-noto-700 font-semibold bg-gray-200 hover:bg-gray-500 duration-300 text-[#018FE1] px-2 lg:px-6 py-3 cursor-pointer rounded-xl text-lg lg:text-xl uppercase">
+            <button className="flex justify-center items-center w-[100%] font-noto-700 font-semibold bg-gray-200 hover:bg-gray-500 duration-300 text-[#5fc6d6] px-2 lg:px-6 py-3 cursor-pointer rounded-xl text-lg lg:text-xl uppercase">
               <MdOutlineAdsClick className="mr-2 text-2xl  lg:text-3xl" /> Comenzar hoy para una piel radiante
             </button>
           </div>
