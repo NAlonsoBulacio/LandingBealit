@@ -86,7 +86,7 @@ const Registro2 = ({ actualizarEstado }) => {
           onSubmit={handleSubmit}
         >
           <input
-            className="w-full border-gray-700 border-[1px] py-2 px-2 focus:outline-none focus:border-gray-700"
+            className="w-full border-gray-700 border-[1px] py-2 px-2 focus:outline-none focus:border-gray-700 rounded-xl"
             placeholder="Tu Nombre"
             name="Name"
             type="text"
@@ -98,7 +98,7 @@ const Registro2 = ({ actualizarEstado }) => {
                 <span className="text-red-500">{errors.Name}</span>
               )}
           <input
-            className="w-[100%] border-gray-700 border-[1px] py-2 px-2 focus:outline-none focus:border-gray-700"
+            className="w-[100%] border-gray-700 border-[1px] py-2 px-2 focus:outline-none focus:border-gray-700 rounded-xl"
             placeholder="Tu Email"
             name="Email"
             type="text"
@@ -111,7 +111,7 @@ const Registro2 = ({ actualizarEstado }) => {
               )}
           <input
             type="submit"
-            className="flex justify-center items-center w-[100%] font-noto-700 font-semibold bg-gray-200 hover:bg-gray-500 duration-300 text-[#018FE1] px-6 py-3 cursor-pointer rounded-xl text-xl"
+            className="flex justify-center items-center w-[100%] font-noto-700 font-semibold bg-gray-700 hover:bg-gray-500 duration-300 text-gray-100 px-6 py-3 cursor-pointer rounded-xl text-xl"
             value="Reservar mi plaza!"
           />
         </form>
