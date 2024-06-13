@@ -101,7 +101,7 @@ const LandingVideo = () => {
         <div className="w-full lg:w-auto mx-3">
           <a 
           href="https://bealit.mx/products/kit-revitalizante-antiage"
-          className="flex justify-center items-center w-[100%] font-noto-700 font-semibold bg-gray-200 hover:bg-gray-500 duration-300 text-[#5fc6d6] px-2 lg:px-6 py-3 cursor-pointer rounded-xl text-lg lg:text-xl uppercase">
+          className="button-lead flex justify-center items-center w-[100%] font-noto-700 font-semibold bg-gray-200 hover:bg-gray-500 duration-300 text-[#5fc6d6] px-2 lg:px-6 py-3 cursor-pointer rounded-xl text-lg lg:text-xl uppercase">
             <MdOutlineAdsClick className="mr-2 text-2xl  lg:text-3xl" />{" "}
             Comenzar hoy para una piel radiante
           </a>
