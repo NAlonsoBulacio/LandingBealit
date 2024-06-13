@@ -75,7 +75,7 @@ const Registro2 = ({ actualizarEstado }) => {
   return (
     <div className="App p-0 lg:p-4 space-y-4 w-full">
       <div className="flex flex-wrap justify-center">
-        <h1 className="text-md lg:text-lg font-semibold text-center uppercase text-gray-200">Rellena el formulario con tu nombre y email</h1>
+        <h1 className="text-sm lg:text-lg font-semibold text-center uppercase text-gray-200">Rellena el formulario con tu nombre y email</h1>
       </div>
       {/* <h1 className="text-left">
       Rellena el formulario con tu nombre y email
@@ -111,7 +111,7 @@ const Registro2 = ({ actualizarEstado }) => {
               )}
           <input
             type="submit"
-            className="flex justify-center items-center w-[100%] font-noto-700 font-semibold bg-gray-200 hover:bg-gray-500 duration-300 text-[#5fc6d6] px-6 py-3 cursor-pointer rounded-xl text-xl"
+            className="flex justify-center items-center w-[100%] font-noto-700 font-semibold bg-gray-200 hover:bg-gray-500 duration-300 text-[#018FE1] px-6 py-3 cursor-pointer rounded-xl text-xl"
             value="Reservar mi plaza!"
           />
         </form>

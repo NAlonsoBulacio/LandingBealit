@@ -12,10 +12,10 @@ const Landing = () => {
   };
 
   return (
-    <div className="bg-[#5fc6d6] w-full lg:w-auto ">
+    <div className="bg-[#018FE1] w-full lg:w-auto ">
       <div className="flex flex-wrap justify-center items-start py-4 ">
         <div className="w-full flex justify-center">
-          <img className="w-64" src={logo} alt="" />
+          <img className="w-[200px] lg:w-64" src={logo} alt="" />
         </div>
         <div className="space-y-2 px-3 lg:px-10 xl:px-44">
           <p className="text-lg lg:text-xl italic text-gray-200">
@@ -25,7 +25,7 @@ const Landing = () => {
             Descubre el Método Científicamente Probado de 5 Minutos para 
            <span className="text-gray-700"> Revitalizar tu Piel en menos de 90 días</span>  sin cirugía. Garantizado
           </h1>
-          <p className="text-lg lg:text-xl italic text-gray-200">
+          <p className="text-md lg:text-xl italic text-gray-200">
             En una masterclass Exclusiva de 10 Minutos
           </p>
         </div>
