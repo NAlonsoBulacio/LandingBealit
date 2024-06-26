@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import Registro2 from "../../components/Registro/Registro";
 import logo from "../../assets/logo-trans.png";
 import { MdOutlineAdsClick } from "react-icons/md";
-
+import video from "../../assets/masterclassBealit.mp4";
 const LandingVideo = () => {
   const [showImage, setShowImage] = useState(true);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -82,7 +82,7 @@ const LandingVideo = () => {
                 onTimeUpdate={handleTimeUpdate}
               >
                 <source
-                  src="https://res.cloudinary.com/de2r6mtda/video/upload/v1716494722/Bealit/Y2meta.app-MASTERCLASS-_1080p_2_elzkdu.mp4"
+                  src={video}
                   type="video/mp4"
                 />
                 Your browser does not support the video tag.
