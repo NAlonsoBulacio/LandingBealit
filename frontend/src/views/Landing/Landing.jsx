@@ -2,7 +2,7 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import Registro2 from "../../components/Registro/Registro";
 import logo from "../../assets/logo-trans.png";
-
+import videoGif from "../../assets/gif.mp4";
 const Landing = () => {
   const history = useHistory();
   const actualizarEstadoPadre = (estado) => {
@@ -33,7 +33,7 @@ const Landing = () => {
           <div className="w-full lg:w-[50%] flex justify-center px-0 lg:px-3 ">
             <video className="w-full h-auto mb-4 rounded-xl" loop muted autoPlay playsInline>
               <source
-                src="https://res.cloudinary.com/de2r6mtda/video/upload/v1716496259/Bealit/Dise%C3%B1o_sin_t%C3%ADtulo_1_ijbhrb.mp4"
+                src={videoGif}
                 type="video/mp4"
               />
               Your browser does not support the video tag.
