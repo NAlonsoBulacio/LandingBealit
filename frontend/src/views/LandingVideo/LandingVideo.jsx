@@ -64,7 +64,7 @@ const LandingVideo = () => {
           {showImage && (
             <img
               className="button-video w-full h-auto mb-4 rounded-xl cursor-pointer"
-              src="https://res.cloudinary.com/de2r6mtda/image/upload/v1716499323/Bealit/Dise%C3%B1o_sin_t%C3%ADtulo_37_jhctgk.png"
+              src="https://cdn.shopify.com/s/files/1/0694/5161/2377/files/videopreview.png?v=1719583128"
               alt="Placeholder"
               onClick={handleClick}
             />
